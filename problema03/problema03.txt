@@ -1,0 +1,25 @@
+1.  Inicio
+2.  nombre          , x(50)[{a-z},{A-Z},{BS}] <-- ""	
+3.  diasTrabajados  , i [0,n] <-- 0
+4.  costoDia        , d [0,n] <-- 0
+5.  total           , d [0,n] <-- 0
+6.  mensaje         , x(500)[{a-z},{BS}] <-- ""		
+7.  contador        , i [0,n] <-- 1
+
+8.  Mientras contador <= 5 entonces
+9. 	<< "Ingrese el nombre"
+10.	>> nombre 
+
+11. 	<< "Ingrese el número de días trabajados"
+12.     >> diasTrabajados
+
+13. 	<< "Ingrese el el costo del día de trabajo"
+14.     >> costoDia
+
+15. 	total <-- diasTrabajados * costoDia
+16. 	mensaje <-- mensaje + nombre + "\t" + diasTrabajados + "\t" + "$" + costoDia + "\t" + "$" + total + "\n"
+17. 	contador <-- contador + 1
+
+18. Fin Mientras
+19. << mensaje
+20. Fin

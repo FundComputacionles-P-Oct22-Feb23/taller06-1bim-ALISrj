@@ -1,0 +1,12 @@
+1.  Inicio
+2.  contador, i [0,n] <-- 5
+3.  valor2  , i [0,n] <-- 10
+4.  mensaje , x(500)[{a-z},{BS}] <-- ""		
+
+5.  Mientras contador <= 30 entonces
+6. 	 mensaje <-- mensaje + contador + "/" + valor2 + "\n"
+7. 	 contador <-- contador + 5
+8. 	 valor2 <-- valor2 + 2
+9.  Fin Mientras
+10. << mensaje
+11. Fin
